@@ -1,9 +1,9 @@
 <h2>New book</h2>
       <!-- form_with部分 -->
       <%= form_with model: book, local:true do |f| %>
-        <h4>Title</h4>
+        <h6>Title</h6>
         <%= f.text_field :title %>
-        <h4>Opinion</h4>
+        <h6>Opinion</h6>
         <%= f.text_area :body %>
         <%= f.submit 'Create Book', class: "btn btn-sm btn-success"%>
       <% end %>
